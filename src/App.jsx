@@ -1,3 +1,5 @@
+import React from "react";
+import CssBaseline from '@mui/material/CssBaseline';
 import './App.css'
 
 const api = {
@@ -9,7 +11,17 @@ function App() {
 
   return (
     <>
-
+        <React.Fragment>
+            <CssBaseline />
+            {/* The rest of your application */}
+        </React.Fragment>
+        <div className="app">
+            <main>
+                <div className="search-box">
+                    <input type="text" className="search-bar" placeholder="Search..."/>
+                </div>
+            </main>
+        </div>
     </>
   )
 }
